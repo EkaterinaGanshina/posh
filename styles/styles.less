@@ -134,6 +134,8 @@ p {
 .container {
 	width: 75%;
 	margin: 0 auto;
+	padding: 0 15px;
+	box-sizing: border-box;
 }
 
 .content-section {
@@ -285,7 +287,7 @@ section .description {
 		h1 {
 			font-family: @font-serif;
 			font-weight: 700;
-			margin: 0.8rem;
+			margin: 0.8rem 0;
 			font-size: 4rem;
 			
 			.yellow {
@@ -352,36 +354,6 @@ section .description {
 				top: 2.5rem;
 				left: 50%;
 			}
-		}
-		
-		[data-article="about"]::before {
-			background-position: 0 0;
-			width: 32px;
-			margin-left: -16px;
-		}
-		
-		[data-article="wedding"]::before {
-			background-position: -32px 0;
-			width: 48px;
-			margin-left: -24px;
-		}
-		
-		[data-article="party"]::before {
-			background-position: -80px 0;
-			width: 34px;
-			margin-left: -17px;
-		}
-		
-		[data-article="beauty"]::before {
-			background-position: -114px 0;
-			width: 40px;
-			margin-left: -20px;
-		}
-		
-		[data-article="course"]::before {
-			background-position: -154px 0;
-			width: 40px;
-			margin-left: -20px;
 		}
 	}
 	
@@ -572,7 +544,7 @@ section .description {
 				flex-basis: 66.66%;
 				max-width: 66.66%; // fix IE bug with multi-line flexbox and box-sizing
 				position: relative;
-				
+		
 				&::before {
 					content: 'Highlight post';
 					text-transform: uppercase;
@@ -664,12 +636,13 @@ section .description {
 		padding-top: 1rem;
 		
 		li {
-			flex-basis: 30%;
+			flex-basis: 33.3%;
 			box-sizing: border-box;
 			padding-left: ~"calc(54px + 1.1rem)";
 			padding-right: 0.8rem;
 			display: inline-block;
 			position: relative;
+			font-size: 1rem;
 			
 			&::before {
 				content: '';
@@ -682,9 +655,14 @@ section .description {
 				background-size: cover;
 			}
 			
-			&.address::before {
-				width: 54px;
-				background-position: 0 0;
+			&.address {
+				// TODO: только от 992 пикс (полная версия)
+				//flex-basis: 40%;
+				
+				&::before {
+					width: 54px;
+					background-position: 0 0;
+				}
 			}
 			
 			&.phone::before {
@@ -702,7 +680,7 @@ section .description {
 				text-transform: uppercase;
 				font-family: @font-lato;
 				font-weight: 700;
-				font-size: 0.7rem;
+				font-size: 0.7em;
 				margin-bottom: 0.3rem;
 			}
 			
@@ -710,7 +688,7 @@ section .description {
 				line-height: 1.4;
 				font-family: @font-serif;
 				font-weight: 400;
-				font-size: 1.05rem;
+				font-size: 1.1em;
 			}
 		}
 	}
@@ -784,5 +762,509 @@ section .description {
 		right: 5rem;
 		padding: 0.5rem;
 		cursor: pointer;
+	}
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 320px) {
+	html {
+		font-size: 13px;
+	}
+	
+	.container {
+		width: 100%;
+	}
+	
+	.content-section {
+		padding: 4rem 0 5rem;
+	}
+	
+	.page-header {
+		height: 100vh;
+		
+		.pre-header {
+			padding: 0.8rem 15px;
+			
+			.header-contacts {
+				display: block;
+				
+				.mdi {
+					margin-right: 0.15rem;
+				}
+				
+				.phone {
+					margin-right: 1rem;
+				}
+			}
+			
+			.header-socials {
+				display: none;
+			}
+		}
+		
+		.header-wrapper {
+			.header-logo {
+				padding: 1rem 0;
+				width: 99px;
+				
+				img {
+					width: 100%;
+					height: auto;
+				}
+			}
+		}
+		
+		.mobile-only {
+			display: block;
+			font-size: 2rem;
+			padding: 0.5rem;
+			margin-right: -0.25rem;
+			cursor: pointer;
+		}
+		
+		.main-nav {
+			display: none;
+			
+			&.shown {
+				display: block;
+			}
+		}
+		
+		.promo {
+			h1 {
+				font-size: 2.5rem;
+			}
+			
+			.buttons {
+				.btn {
+					padding: 0.6rem;
+					
+					&:first-child {
+						margin: 0 0 1rem;
+					}
+				}
+			}
+		}
+	}
+	
+	.services {
+		.services-list {
+			flex-wrap: wrap;
+			
+			li {
+				padding: 1.2rem 1rem 1.2rem 3.7rem;
+				text-align: left;
+				margin-bottom: 1rem;
+				flex-basis: 50%;
+				max-width: 50%;
+				white-space: nowrap;
+				
+				&::before {
+					height: 32px;
+					top: 0.6rem;
+					background-size: cover;
+					margin: 0;
+				}
+			}
+			
+			[data-article="about"]::before {
+				background-position: 0 0;
+				width: 25px;
+				left: 1rem;
+			}
+			
+			[data-article="wedding"] {
+				padding-left: 3.9rem;
+				
+				&::before {
+					background-position: -25px 0;
+					width: 37px;
+					left: 0.6rem;
+					height: 30px;
+					
+				}
+			}
+			
+			[data-article="party"]::before {
+				background-position: -67px 0;
+				width: 27px;
+				left: 0.9rem;
+			}
+			
+			[data-article="beauty"]::before {
+				background-position: -96px 0;
+				width: 34px;
+				left: 0.7rem;
+			}
+			
+			[data-article="course"] {
+				margin: 0;
+				
+				&::before {
+					background-position: -129px 0;
+					width: 34px;
+					left: 0.6rem;
+				}
+			}
+		}
+		
+		.articles-list {
+			.article {
+				display: block;
+				
+				.post-img {
+					margin-right: 8px;
+				}
+				
+				.content {
+					margin: 1.6rem 0 0;
+				}
+			}
+		}
+	}
+	
+	.today-post {
+		.post-wrapper {
+			.post {
+				margin: 0;
+				flex-direction: column;
+				padding: 1.5rem;
+				
+				.date-wrapper {
+					padding: 0 0 1rem;
+					
+					.mdi {
+						display: none;
+					}
+				}
+				
+				.content {
+					padding: 0;
+					border: none;
+				}
+			}
+		}
+	}
+	
+	.latest-blog {
+		.categories {
+			margin-bottom: 2rem;
+			
+			li {
+				margin: 0 0.5rem;
+				padding: 0.5rem;
+			}
+		}
+		
+		.posts-wrapper {
+			.post {
+				flex-basis: 100%;
+				max-width: 100%;
+				margin-bottom: 2.2rem;
+				
+				.post-image img {
+					-webkit-box-shadow: none;
+					-moz-box-shadow: none;
+					box-shadow: none;
+				}
+				
+				&.highlighted-post {
+					flex-basis: 100%;
+					max-width: 100%;
+					
+					&::before {
+						content: none;
+					}
+				}
+				
+				h3 {
+					margin-bottom: 0.6rem;
+					
+					a {
+						line-height: 1.2;
+					}
+				}
+				
+				&:nth-child(n+4) {
+					display: none;
+				}
+			}
+		}
+	}
+	
+	.contact {
+		.contacts-list {
+			flex-wrap: wrap;
+			padding: 0;
+			
+			li {
+				flex-basis: 100%;
+				max-width: 100%;
+				padding: 1rem 1rem 1rem 5.2rem;
+				margin: 0.5rem 0;
+				font-size: 1.04rem;
+				
+				&.phone::before {
+					left: 6px;
+				}
+				
+				&.email::before {
+					top: 5px;
+				}
+			}
+		}
+	}
+	
+	.page-footer {
+		text-align: left;
+		
+		.mobile-only {
+			display: inline-block;
+			font-size: 2rem;
+			cursor: pointer;
+			vertical-align: top;
+			margin-bottom: 1rem;
+			
+			.mdi {
+				vertical-align: middle;
+			}
+			
+			&::after {
+				content: 'Menu';
+				margin-left: 1rem;
+				font-size: 1.5rem;
+				display: inline-block;
+				line-height: 1;
+			}
+		}
+		
+		.footer-nav {
+			display: block;
+			margin: 0;
+			box-sizing: border-box;
+			transition: height ease-in-out 0.3s, opacity 0.3s;
+			height: 0;
+			overflow: hidden;
+			opacity: 0;
+			padding: 0.5rem 0 0.5rem 3.2rem;
+			
+			&.shown {
+				height: 240px;
+				opacity: 1;
+			}
+			
+			ul li {
+				padding: 0.35rem 0.8rem;
+				display: block;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 480px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+	.services {
+		.services-list {
+			[data-article="about"]::before {
+				background-position: 0 0;
+				width: 32px;
+				margin-left: -16px;
+			}
+			
+			[data-article="wedding"]::before {
+				background-position: -32px 0;
+				width: 48px;
+				margin-left: -24px;
+			}
+			
+			[data-article="party"]::before {
+				background-position: -80px 0;
+				width: 34px;
+				margin-left: -17px;
+			}
+			
+			[data-article="beauty"]::before {
+				background-position: -114px 0;
+				width: 40px;
+				margin-left: -20px;
+			}
+			
+			[data-article="course"]::before {
+				background-position: -154px 0;
+				width: 40px;
+				margin-left: -20px;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	.container {
+		width: 80%;
+	}
+	
+	.services .services-list li {
+		flex-basis: 18%;
+	}
+	
+	.contact .contacts-list li {
+		padding-left: ~"calc(44px + 1.1rem)";
+		font-size: 1.08rem;
+		
+		&::before {
+			height: 42px;
+		}
+		
+		&.address::before {
+			width: 44px;
+			background-position: 0 0;
+		}
+		
+		&.phone::before {
+			background-position: -46px 0;
+			width: 36px;
+			left: 12px;
+		}
+		
+		&.email::before {
+			width: 42px;
+			background-position: -84px 0;
+		}
+		
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.page-header {
+		height: 90vh;
+		
+		.promo {
+			padding-top: 5.5rem;
+		}
+	}
+	
+	.today-post .post-wrapper .post {
+		margin: 0 3.8rem;
+	}
+}
+
+@media screen and (min-width: 1600px) {
+	html {
+		font-size: 16px;
+	}
+	
+	.container {
+		width: 70%;
+	}
+	
+	.content-section {
+		padding: 6rem 0 7rem;
+	}
+	
+	.page-header {
+		.promo {
+			padding-top: 3rem;
+		}
+	}
+	
+	.services {
+		.services-list {
+			padding: 2rem 0;
+			
+			li {
+				padding: 8rem 0.5rem 1.8rem;
+				
+				&::before {
+					top: 3rem;
+				}
+			}
+		}
+		
+		.articles-list .article .content {
+			margin-left: 5rem;
+		}
+	}
+	
+	.today-post {
+		.post-wrapper .toggle {
+			margin: 0 2rem;
+		}
+	}
+	
+	.latest-blog .posts-wrapper {
+		margin: 0 -1rem;
+		
+		.post {
+			padding: 0 1rem;
+			
+			&.highlighted-post {
+				&::before {
+					left: 4px;
+				}
+				
+				&::after {
+					left: -4px;
+				}
+			}
+		}
+	}
+	
+	.contact .contacts-list li {
+		font-size: 1.1rem;
+	}
+}
+
+@media screen and (min-width: 1920px) {
+	html {
+		font-size: 18px;
+	}
+	
+	.container {
+		width: 65%;
+	}
+	
+	.page-header .promo {
+		padding-top: 7rem;
+	}
+	
+	.services {
+		.articles-list .article .content {
+			margin-left: 6rem;
+		}
+	}
+	
+	.today-post {
+		.post-wrapper {
+			.toggle {
+				margin: 0 3rem;
+			}
+			
+			.post {
+				padding: 1.4rem 5rem;
+				margin: 0 0.8rem;
+			}
+		}
+	}
+	
+	.latest-blog .posts-wrapper {
+		margin: 0 -1.5rem;
+		
+		.post {
+			padding: 0 1.5rem;
+			
+			&.highlighted-post {
+				&::before {
+					left: 8px;
+				}
+				
+				&::after {
+					left: 0;
+				}
+			}
+		}
 	}
 }

@@ -2,6 +2,7 @@
 <html>
 <head lang="en">
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="/posh/favicon.ico" type="image/x-icon">
 	<title>Posh Service</title>
 	
@@ -62,6 +63,9 @@
 				<div class="header-logo">
 					<img src="/posh/img/header-logo.png" width="132" height="48" alt="Posh Logo">
 				</div>
+				<div class="mobile-only">
+					<i class="mdi mdi-menu"></i>
+				</div>
 				<nav class="main-nav">
 					<ul>
 						<li><a href="#">Home</a></li>
@@ -77,15 +81,17 @@
 		</div>
 		
 		<section class="promo">
-			<h1>It's <span class="yellow">Fun</span> To Make Things Up</h1>
-			<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis, metus at
-				fringilla malesuada?</p>
-			<div class="buttons">
-				<a href="#" class="btn btn-bordered-white">About Us</a>
-				<a href="#" class="btn btn-yellow">
-					<i class="mdi mdi-play"></i>
-					Watch Video
-				</a>
+			<div class="container">
+				<h1>It's <span class="yellow">Fun</span> To Make Things Up</h1>
+				<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis, metus at
+					fringilla malesuada?</p>
+				<div class="buttons">
+					<a href="#" class="btn btn-bordered-white">About Us</a>
+					<a href="#" class="btn btn-yellow">
+						<i class="mdi mdi-play"></i>
+						Watch Video
+					</a>
+				</div>
 			</div>
 		</section>
 	</header>
@@ -327,6 +333,9 @@
 	
 	<footer class="page-footer">
 		<div class="container">
+			<div class="mobile-only menu">
+				<i class="mdi mdi-menu"></i>
+			</div>
 			<nav class="footer-nav">
 				<ul>
 					<li><a href="#">Home</a></li>
@@ -354,7 +363,8 @@
 			</div>
 		</div>
 	</footer>
-	<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+	
+	<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script src="/posh/js/script.js"></script>
 </body>
 </html>

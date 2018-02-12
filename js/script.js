@@ -30,4 +30,7 @@ $(document).ready(function () {
             $services.find('.articles-list [data-title="' + article + '"]').fadeIn(300);
         });
     });
+    
+    // Open footer nav
+    $('.page-footer .menu').on('click', (e) => { $(e.currentTarget).next().toggleClass('shown') });
 });
