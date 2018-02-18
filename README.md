@@ -7,6 +7,4 @@ You can see it in action at http://ganshina.com/posh/
 
 Author: Ekaterina Ganshina ekaterina@ganshina.com
 
-GitHub repo: https://github.com/EkaterinaGanshina/posh
-
-PSD layout is provided for free by HTML Academy https://htmlacademy.ru Thank you! :heart:
+PSD layout is provided for free by [HTML Academy](https://htmlacademy.ru) Thank you! :heart:
