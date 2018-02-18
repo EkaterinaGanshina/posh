@@ -5,6 +5,7 @@ const date = new Date();
 $(window).on('load', () => { $('.page-header .background').css('opacity', '1') });
 
 $(document).ready(function () {
+    const $header = $('.page-header');
     const $services = $('.services');
     const $today = $('.today-post .date');
     
@@ -31,6 +32,21 @@ $(document).ready(function () {
         });
     });
     
-    // Open footer nav
+    // Open header nav
+    $header.find('.open-menu').on('click', function (e) {
+        $header.addClass('nav-opened');
+        e.stopPropagation();
+        $(document).on('click touchmove', closeHeaderNav);
+    });
+    
+    // Close header nav
+    $header.find('.main-nav-mobile .close-menu').on('click', closeHeaderNav);
+    
+    function closeHeaderNav() {
+        $header.removeClass('nav-opened');
+        $(document).off('click touchmove', closeHeaderNav);
+    }
+    
+    // Toggle footer nav
     $('.page-footer .menu').on('click', (e) => { $(e.currentTarget).next().toggleClass('shown') });
 });
