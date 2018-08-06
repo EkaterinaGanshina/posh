@@ -2,412 +2,421 @@
 Demo project for my portfolio. You can see it in action at http://ganshina.com/posh/
 Author: Ekaterina Ganshina ekaterina@ganshina.com
 GitHub repo: https://github.com/EkaterinaGanshina/posh
-PSD layout is provided for free by HTML Academy https://htmlacademy.ru Thank you! <3
+PSD layout is provided for free by Juno Team https://junoteam.com/portfolio/posh-free-psd-beauty-template/
 -->
 
 <!DOCTYPE html>
 <html>
 <head lang="en">
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="shortcut icon" href="/posh/favicon.ico" type="image/x-icon">
-	<title>Posh Project</title>
-	
-	<base href="http://ganshina.com/posh">
-	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-	<link href="/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="/posh/styles/styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="/posh/favicon16.ico" sizes="16x16">
+    <link rel="icon" type="image/x-icon" href="/posh/favicon32.ico" sizes="32x32">
+    <title>Posh Project</title>
+
+    <base href="http://ganshina.com/posh">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link href="/css/materialdesignicons.min.css" media="all" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/posh/styles/styles.css">
 </head>
 <body>
-	<header class="page-header">
-		<div class="background"></div>
-		<div class="container pre-header">
-			<div class="header-contacts">
-				<i class="mdi mdi-phone"></i>
-				<span class="phone"><a href="tel:+12345678900">+12 34 567 8900</a></span>
-				<i class="mdi mdi-map-marker"></i>
-				<span class="address">27 Ba Trieu St, Vietnam</span>
-			</div>
-			<div class="header-socials">
-				<ul>
-					<li class="twitter">
-						<a href="#">
-							<i class="mdi mdi-twitter" aria-hidden="true"></i>
-							<span class="sr-only">Twitter</span>
-						</a>
-					</li>
-					<li class="facebook">
-						<a href="#">
-							<i class="mdi mdi-facebook" aria-hidden="true"></i>
-							<span class="sr-only">Facebook</span>
-						</a>
-					</li>
-					<li class="vk">
-						<a href="#">
-							<i class="mdi mdi-vk" aria-hidden="true"></i>
-							<span class="sr-only">VK</span>
-						</a>
-					</li>
-					<li class="youtube">
-						<a href="#">
-							<i class="mdi mdi-youtube-play" aria-hidden="true"></i>
-							<span class="sr-only">Youtube</span>
-						</a>
-					</li>
-					<li class="instagram">
-						<a href="#">
-							<i class="mdi mdi-instagram" aria-hidden="true"></i>
-							<span class="sr-only">Instagram</span>
-						</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-		
-		<div class="header-top">
-			<div class="container header-wrapper">
-				<div class="header-logo">
-					<img src="/posh/img/header-logo.png" width="132" height="48" alt="Posh Logo">
-				</div>
-				<div class="mobile-only open-menu">
-					<i class="mdi mdi-menu"></i>
-				</div>
-				<nav class="main-nav">
-					<ul>
-						<li><a href="#">Home</a></li>
-						<li><a href="#">Service</a></li>
-						<li><a href="#">Gallery</a></li>
-						<li><a href="#">Channel</a></li>
-						<li><a href="#">Blog</a></li>
-						<li><a href="#">Team</a></li>
-						<li><a href="#">Contact</a></li>
-					</ul>
-				</nav>
-			</div>
-		</div>
-		
-		<nav class="mobile-only main-nav-mobile">
-			<div class="close-menu">
-				<i class="mdi mdi-close"></i>
-			</div>
-			
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Service</a></li>
-				<li><a href="#">Gallery</a></li>
-				<li><a href="#">Channel</a></li>
-				<li><a href="#">Blog</a></li>
-				<li><a href="#">Team</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
-			
-			<div class="mobile-socials">
-				<ul>
-					<li class="twitter">
-						<a href="#"><i class="mdi mdi-twitter"></i></a>
-					</li>
-					<li class="facebook">
-						<a href="#"><i class="mdi mdi-facebook"></i></a>
-					</li>
-					<li class="vk">
-						<a href="#"><i class="mdi mdi-vk"></i></a>
-					</li>
-					<li class="youtube">
-						<a href="#"><i class="mdi mdi-youtube-play"></i></a>
-					</li>
-					<li class="instagram">
-						<a href="#"><i class="mdi mdi-instagram"></i></a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-		
-		<section class="promo">
-			<div class="container">
-				<h1>It's <span class="yellow">Fun</span> To Make Things Up</h1>
-				<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis, metus at
-					fringilla malesuada?</p>
-				<div class="buttons">
-					<a href="#" class="btn btn-bordered-white">About Us</a>
-					<a href="#" class="btn btn-yellow">
-						<i class="mdi mdi-play"></i>
-						Watch Video
-					</a>
-				</div>
-			</div>
-		</section>
-	</header>
-	
-	<section class="content-section services">
-		<div class="container">
-			<h2>Our Services</h2>
-			<p class="description">Vastly improved treatments and increased social acceptance has lead to cosmetics</p>
-			
-			<ul class="services-list">
-				<li class="service" data-article="about">About</li>
-				<li class="service active" data-article="wedding">Wedding</li>
-				<li class="service" data-article="party">Party</li>
-				<li class="service" data-article="beauty">Beauty Box</li>
-				<li class="service" data-article="course">Course</li>
-			</ul>
-			
-			<div class="articles-list">
-				<div class="article-wrapper" data-title="about">
-					<article class="article">
-						<div class="post-img">
-							<img src="/posh/img/blog/about.jpg" class="shadow-yellow" alt="Blog Post Image">
-						</div>
-						<div class="content">
-							<h3>Why to believe a celebration Agency for Planning The Wedding</h3>
-							<p>Congratulations! You are already engaged and also the big day is simply not far away.
-								The two of you – the wedding couple – are busy shopping non-stop, finalizing honeymoon
-								destinations and dreaming cozy ideas all along.</p>
-							<a href="#" class="more">Learn More &rarr;</a>
-						</div>
-					</article>
-				</div>
-				
-				<div class="article-wrapper shown" data-title="wedding">
-					<article class="article">
-						<div class="post-img">
-							<img src="/posh/img/blog/wedding.jpg" class="shadow-yellow" alt="Blog Post Image">
-						</div>
-						<div class="content">
-							<h3>To Keep Makeup Looking Fresh Take A Powder</h3>
-							<p>Hydroderm is the highly desired anti-aging cream on the block. This serum restricts the
-								occurrence of early aging sings on the skin and keeps the skin younger, tighter and
-								healthier.</p>
-							<a href="#" class="more">Learn More &rarr;</a>
-						</div>
-					</article>
-				</div>
-				
-				<div class="article-wrapper" data-title="party">
-					<article class="article">
-						<div class="post-img">
-							<img src="/posh/img/blog/party.jpg" class="shadow-yellow" alt="Blog Post Image">
-						</div>
-						<div class="content">
-							<h3>This Is Why You Get To Celebrate Your Birthday Every Year</h3>
-							<p>Have you ever thought about why we even bother to celebrate birthdays? When you think
-								about it, they’re really just an opportunity for your friends and family to come
-								together and congratulate you for surviving another year.</p>
-							<a href="#" class="more">Learn More &rarr;</a>
-						</div>
-					</article>
-				</div>
-				
-				<div class="article-wrapper" data-title="beauty">
-					<article class="article">
-						<div class="post-img">
-							<img src="/posh/img/blog/nude.jpg" class="shadow-yellow" alt="Blog Post Image">
-						</div>
-						<div class="content">
-							<h3>7 Ways to Make Your Makeup Look More Natural</h3>
-							<p>It’s tricky finding a balance between full-face and bare faced, so I’ve sought out advice
-								from makeup artist and Burberry’s makeup artistic consultant Wendy Rowe. Here are her
-								tips for achieving a simple, natural makeup look for those in between days.</p>
-							<a href="#" class="more">Learn More &rarr;</a>
-						</div>
-					</article>
-				</div>
-				
-				<div class="article-wrapper" data-title="course">
-					<article class="article">
-						<div class="post-img">
-							<img src="/posh/img/blog/courses.jpg" class="shadow-yellow" alt="Blog Post Image">
-						</div>
-						<div class="content">
-							<h3>Organizing Tip: How to Organize a Party</h3>
-							<p>Who doesn’t love a party?<br>
-								While enjoying a party is easy (you just show up, eat, drink and be merry), organizing
-								a party is a different beast altogether.</p>
-							<a href="#" class="more">Learn More &rarr;</a>
-						</div>
-					</article>
-				</div>
-			</div>
-		</div>
-	</section>
-		
-	<div class="today-post">
-		<div class="container post-wrapper">
-			<a href="#" class="toggle toggle-left">&loarr;</a>
-			<div class="post">
-				<div class="date-wrapper">
-					<div class="date">
-						<span class="month">Sep</span>
-						<span class="day">24</span>
-					</div>
-					<i class="mdi mdi-heart"></i>
-				</div>
-				<div class="content">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-					Proin eros est, luctus a blandit eu, hendrerit ac mauris.
-					Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-				</div>
-			</div>
-			<a href="#" class="toggle toggle-right">&roarr;</a>
-		</div>
-	</div>
-	
-	<section class="content-section channel">
-		<div class="container">
-			<h2>Channel</h2>
-			<p class="description">Vastly improved treatments and increased social</p>
-			<a href="#" class="video">
-				<img src="/posh/img/video.jpg" alt="Watch Video">
-			</a>
-			<a href="#" class="btn btn-yellow">More Video</a>
-		</div>
-	</section>
-	
-	<section class="content-section latest-blog">
-		<div class="container">
-			<h2>Latest Blog</h2>
-			
-			<ul class="categories">
-				<li><a href="#">all</a></li>
-				<li class="active"><a href="#">reviews</a></li>
-				<li><a href="#">looks</a></li>
-				<li><a href="#">lifestyles</a></li>
-				<li><a href="#">tips</a></li>
-				<li><a href="#">tutorials</a></li>
-			</ul>
-			
-			<div class="posts-wrapper">
-				<div class="post highlighted-post">
-					<a href="#" class="post-image">
-						<img src="/posh/img/latest-blog/highlighted.jpg" alt="Blog Post Image">
-					</a>
-					<h3>
-						<a href="#">Hollywood Hairstyles Do Not Require A Trip To A High Priced Salon or Beautician</a>
-					</h3>
-					<div class="post-info">
-						<span class="author">Eugenia Frank</span>
-						<span class="date">April 22</span>
-					</div>
-				</div>
-				
-				<div class="post">
-					<a href="#" class="post-image">
-						<img class="shadow-yellow" src="/posh/img/latest-blog/forehead.jpg" alt="Blog Post Image">
-					</a>
-					<h3>
-						<a href="#">Forehead Lift Brow Lift For Head Rejuvenation</a>
-					</h3>
-					<div class="post-info">
-						<span class="author">Eugenia Frank</span>
-						<span class="date">April 22</span>
-					</div>
-				</div>
-				
-				<div class="post">
-					<a href="#" class="post-image">
-						<img src="/posh/img/latest-blog/lipstick.jpg" alt="Blog Post Image">
-					</a>
-					<h3>
-						<a href="#">Beauty Treatment Exercises Cheapest Inborn Sense Promoting Nice Lamp</a>
-					</h3>
-					
-					<div class="post-info">
-						<span class="author">Eugenia Frank</span>
-						<span class="date">April 22</span>
-					</div>
-				</div>
-				
-				<div class="post">
-					<a href="#" class="post-image">
-						<img src="/posh/img/latest-blog/model.jpg" alt="Blog Post Image">
-					</a>
-					<h3>
-						<a href="#">Curly Irons Are As Individual As The Women Who Use Them</a>
-					</h3>
-					
-					<div class="post-info">
-						<span class="author">Eugenia Frank</span>
-						<span class="date">April 22</span>
-					</div>
-				</div>
-				
-				<div class="post">
-					<a href="#" class="post-image">
-						<img src="/posh/img/latest-blog/flowers.jpg" alt="Blog Post Image">
-					</a>
-					<h3>
-						<a href="#">Hollywood Hairstyles Do Not Require A Trip To A High Priced Salon or Beautician</a>
-					</h3>
-					
-					<div class="post-info">
-						<span class="author">Eugenia Frank</span>
-						<span class="date">April 22</span>
-					</div>
-				</div>
-			</div>
-			
-			<div class="btn-more">
-				<a href="#" class="btn btn-bordered-dark">See More</a>
-			</div>
-		</div>
-	</section>
-	
-	<section class="content-section contact">
-		<div class="container">
-			<h2>Contact</h2>
-			<p class="description">Vastly improved treatments and increased social</p>
-			
-			<ul class="contacts-list">
-				<li class="address">
-					<h3>Address</h3>
-					<div>27 Ba Trieu St. Hue, Vietnam</div>
-				</li>
-				<li class="phone">
-					<h3>Phone Numbers</h3>
-					<div><a href="tel:+12345678900">+12 34 567 8900</a></div>
-				</li>
-				<li class="email">
-					<h3>Email Contact</h3>
-					<div><a href="mailto:ekaterina@ganshina.com">ekaterina@ganshina.com</a></div>
-				</li>
-			</ul>
-		</div>
-	</section>
-	
-	<footer class="page-footer">
-		<div class="container">
-			<div class="mobile-only menu">
-				<i class="mdi mdi-menu"></i>
-			</div>
-			<nav class="footer-nav">
-				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Service</a></li>
-					<li><a href="#">Gallery</a></li>
-					<li><a href="#">Channel</a></li>
-					<li><a href="#">Blog</a></li>
-					<li><a href="#">Team</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-			</nav>
-			
-			<div class="footer-logo">
-				<img src="/posh/img/footer-logo.png" alt="Posh Logo" width="180" height="65">
-			</div>
-			
-			<ul class="footer-socials">
-				<li><a href="#">facebook</a></li>
-				<li><a href="#">instagram</a></li>
-				<li><a href="#">youtube</a></li>
-			</ul>
-			
-			<div class="go-top">
-				Go to top&nbsp;&nbsp;&uarr;
-			</div>
-		</div>
-	</footer>
-	
-	<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
-	<script src="/posh/js/script.js"></script>
+<header class="page-header">
+    <div class="header-background">
+        <div class="slide slide-1"></div>
+        <div class="slide slide-2"></div>
+        <div class="slide slide-3"></div>
+        <div class="slide slide-4"></div>
+    </div>
+    <div class="container pre-header">
+        <div class="header-contacts">
+            <i class="mdi mdi-phone"></i>
+            <span class="phone"><a href="tel:+12345678900">+12 34 567 8900</a></span>
+            <i class="mdi mdi-map-marker"></i>
+            <span class="address">27 Ba Trieu St, Vietnam</span>
+        </div>
+        <div class="header-socials">
+            <ul>
+                <li class="twitter">
+                    <a href="#">
+                        <i class="mdi mdi-twitter" aria-hidden="true"></i>
+                        <span class="sr-only">Twitter</span>
+                    </a>
+                </li>
+                <li class="facebook">
+                    <a href="#">
+                        <i class="mdi mdi-facebook" aria-hidden="true"></i>
+                        <span class="sr-only">Facebook</span>
+                    </a>
+                </li>
+                <li class="vk">
+                    <a href="#">
+                        <i class="mdi mdi-vk" aria-hidden="true"></i>
+                        <span class="sr-only">VK</span>
+                    </a>
+                </li>
+                <li class="youtube">
+                    <a href="#">
+                        <i class="mdi mdi-youtube-play" aria-hidden="true"></i>
+                        <span class="sr-only">Youtube</span>
+                    </a>
+                </li>
+                <li class="instagram">
+                    <a href="#">
+                        <i class="mdi mdi-instagram" aria-hidden="true"></i>
+                        <span class="sr-only">Instagram</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="header-top">
+        <div class="container header-wrapper">
+            <div class="header-logo">
+                <img src="/posh/img/header-logo.png" width="132" height="48" alt="Posh Logo">
+            </div>
+            <div class="mobile-only open-menu">
+                <i class="mdi mdi-menu"></i>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Channel</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <nav class="mobile-only main-nav-mobile">
+        <div class="close-menu">
+            <i class="mdi mdi-close"></i>
+        </div>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Channel</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <div class="mobile-socials">
+            <ul>
+                <li class="twitter">
+                    <a href="#"><i class="mdi mdi-twitter"></i></a>
+                </li>
+                <li class="facebook">
+                    <a href="#"><i class="mdi mdi-facebook"></i></a>
+                </li>
+                <li class="vk">
+                    <a href="#"><i class="mdi mdi-vk"></i></a>
+                </li>
+                <li class="youtube">
+                    <a href="#"><i class="mdi mdi-youtube-play"></i></a>
+                </li>
+                <li class="instagram">
+                    <a href="#"><i class="mdi mdi-instagram"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="promo">
+        <div class="container">
+            <h1>It's <span class="yellow">Fun</span> To Make Things Up</h1>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis, metus at
+                fringilla malesuada?</p>
+            <div class="buttons">
+                <a href="#" class="btn btn-bordered-white">About Us</a>
+                <a href="#" class="btn btn-yellow">
+                    <i class="mdi mdi-play"></i>
+                    Watch Video
+                </a>
+            </div>
+        </div>
+    </section>
+</header>
+
+<section class="content-section services">
+    <div class="container">
+        <h2>Our Services</h2>
+        <p class="description">Vastly improved treatments and increased social acceptance has lead to cosmetics</p>
+
+        <ul class="services-list">
+            <li class="service" data-article="about">About</li>
+            <li class="service active" data-article="wedding">Wedding</li>
+            <li class="service" data-article="party">Party</li>
+            <li class="service" data-article="beauty">Beauty Box</li>
+            <li class="service" data-article="course">Course</li>
+        </ul>
+
+        <div class="articles-list">
+            <div class="article-wrapper" data-title="about">
+                <article class="article">
+                    <div class="post-img">
+                        <img src="/posh/img/blog/about.jpg" class="shadow-yellow" alt="Blog Post Image">
+                    </div>
+                    <div class="content">
+                        <h3>Why to believe a celebration Agency for Planning The Wedding</h3>
+                        <p>Congratulations! You are already engaged and also the big day is simply not far away.
+                            The two of you – the wedding couple – are busy shopping non-stop, finalizing honeymoon
+                            destinations and dreaming cozy ideas all along.</p>
+                        <a href="#" class="more">Learn More &rarr;</a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="article-wrapper shown" data-title="wedding">
+                <article class="article">
+                    <div class="post-img">
+                        <img src="/posh/img/blog/wedding.jpg" class="shadow-yellow" alt="Blog Post Image">
+                    </div>
+                    <div class="content">
+                        <h3>To Keep Makeup Looking Fresh Take A Powder</h3>
+                        <p>Hydroderm is the highly desired anti-aging cream on the block. This serum restricts the
+                            occurrence of early aging sings on the skin and keeps the skin younger, tighter and
+                            healthier.</p>
+                        <a href="#" class="more">Learn More &rarr;</a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="article-wrapper" data-title="party">
+                <article class="article">
+                    <div class="post-img">
+                        <img src="/posh/img/blog/party.jpg" class="shadow-yellow" alt="Blog Post Image">
+                    </div>
+                    <div class="content">
+                        <h3>This Is Why You Get To Celebrate Your Birthday Every Year</h3>
+                        <p>Have you ever thought about why we even bother to celebrate birthdays? When you think
+                            about it, they’re really just an opportunity for your friends and family to come
+                            together and congratulate you for surviving another year.</p>
+                        <a href="#" class="more">Learn More &rarr;</a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="article-wrapper" data-title="beauty">
+                <article class="article">
+                    <div class="post-img">
+                        <img src="/posh/img/blog/nude.jpg" class="shadow-yellow" alt="Blog Post Image">
+                    </div>
+                    <div class="content">
+                        <h3>7 Ways to Make Your Makeup Look More Natural</h3>
+                        <p>It’s tricky finding a balance between full-face and bare faced, so I’ve sought out advice
+                            from makeup artist and Burberry’s makeup artistic consultant Wendy Rowe. Here are her
+                            tips for achieving a simple, natural makeup look for those in between days.</p>
+                        <a href="#" class="more">Learn More &rarr;</a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="article-wrapper" data-title="course">
+                <article class="article">
+                    <div class="post-img">
+                        <img src="/posh/img/blog/courses.jpg" class="shadow-yellow" alt="Blog Post Image">
+                    </div>
+                    <div class="content">
+                        <h3>Organizing Tip: How to Organize a Party</h3>
+                        <p>Who doesn’t love a party?<br>
+                            While enjoying a party is easy (you just show up, eat, drink and be merry), organizing
+                            a party is a different beast altogether.</p>
+                        <a href="#" class="more">Learn More &rarr;</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="today-post">
+    <div class="container post-wrapper">
+        <a href="#" class="toggle toggle-left">&loarr;</a>
+        <div class="post">
+            <div class="date-wrapper">
+                <div class="date">
+                    <span class="month">Sep</span>
+                    <span class="day">24</span>
+                </div>
+                <i class="mdi mdi-heart"></i>
+            </div>
+            <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Proin eros est, luctus a blandit eu, hendrerit ac mauris.
+                Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            </div>
+        </div>
+        <a href="#" class="toggle toggle-right">&roarr;</a>
+    </div>
+</div>
+
+<section class="content-section channel">
+    <div class="container">
+        <h2>Channel</h2>
+        <p class="description">Vastly improved treatments and increased social</p>
+        <a href="#" class="video">
+            <img src="/posh/img/video.jpg" alt="Watch Video">
+        </a>
+        <a href="#" class="btn btn-yellow">More Video</a>
+    </div>
+</section>
+
+<section class="content-section latest-blog">
+    <div class="container">
+        <h2>Latest Blog</h2>
+
+        <ul class="categories">
+            <li><a href="#">all</a></li>
+            <li class="active"><a href="#">reviews</a></li>
+            <li><a href="#">looks</a></li>
+            <li><a href="#">lifestyles</a></li>
+            <li><a href="#">tips</a></li>
+            <li><a href="#">tutorials</a></li>
+        </ul>
+
+        <div class="posts-wrapper">
+            <div class="post highlighted-post">
+                <a href="#" class="post-image">
+                    <img src="/posh/img/latest-blog/highlighted.jpg" alt="Blog Post Image">
+                </a>
+                <h3>
+                    <a href="#">Hollywood Hairstyles Do Not Require A Trip To A High Priced Salon or Beautician</a>
+                </h3>
+                <div class="post-info">
+                    <span class="author">Eugenia Frank</span>
+                    <span class="date">April 22</span>
+                </div>
+            </div>
+
+            <div class="post">
+                <a href="#" class="post-image">
+                    <img class="shadow-yellow" src="/posh/img/latest-blog/forehead.jpg" alt="Blog Post Image">
+                </a>
+                <h3>
+                    <a href="#">Forehead Lift Brow Lift For Head Rejuvenation</a>
+                </h3>
+                <div class="post-info">
+                    <span class="author">Eugenia Frank</span>
+                    <span class="date">April 22</span>
+                </div>
+            </div>
+
+            <div class="post">
+                <a href="#" class="post-image">
+                    <img src="/posh/img/latest-blog/lipstick.jpg" alt="Blog Post Image">
+                </a>
+                <h3>
+                    <a href="#">Beauty Treatment Exercises Cheapest Inborn Sense Promoting Nice Lamp</a>
+                </h3>
+
+                <div class="post-info">
+                    <span class="author">Eugenia Frank</span>
+                    <span class="date">April 22</span>
+                </div>
+            </div>
+
+            <div class="post">
+                <a href="#" class="post-image">
+                    <img src="/posh/img/latest-blog/model.jpg" alt="Blog Post Image">
+                </a>
+                <h3>
+                    <a href="#">Curly Irons Are As Individual As The Women Who Use Them</a>
+                </h3>
+
+                <div class="post-info">
+                    <span class="author">Eugenia Frank</span>
+                    <span class="date">April 22</span>
+                </div>
+            </div>
+
+            <div class="post">
+                <a href="#" class="post-image">
+                    <img src="/posh/img/latest-blog/flowers.jpg" alt="Blog Post Image">
+                </a>
+                <h3>
+                    <a href="#">Hollywood Hairstyles Do Not Require A Trip To A High Priced Salon or Beautician</a>
+                </h3>
+
+                <div class="post-info">
+                    <span class="author">Eugenia Frank</span>
+                    <span class="date">April 22</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="btn-more">
+            <a href="#" class="btn btn-bordered-dark">See More</a>
+        </div>
+    </div>
+</section>
+
+<section class="content-section contact">
+    <div class="container">
+        <h2>Contact</h2>
+        <p class="description">Vastly improved treatments and increased social</p>
+
+        <ul class="contacts-list">
+            <li class="address">
+                <h3>Address</h3>
+                <div>27 Ba Trieu St. Hue, Vietnam</div>
+            </li>
+            <li class="phone">
+                <h3>Phone Numbers</h3>
+                <div><a href="tel:+12345678900">+12 34 567 8900</a></div>
+            </li>
+            <li class="email">
+                <h3>Email Contact</h3>
+                <div><a href="mailto:ekaterina@ganshina.com">ekaterina@ganshina.com</a></div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<footer class="page-footer">
+    <div class="container">
+        <div class="mobile-only menu">
+            <i class="mdi mdi-menu"></i>
+        </div>
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Channel</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="footer-logo">
+            <img src="/posh/img/footer-logo.png" alt="Posh Logo" width="180" height="65">
+        </div>
+
+        <ul class="footer-socials">
+            <li><a href="#">facebook</a></li>
+            <li><a href="#">instagram</a></li>
+            <li><a href="#">youtube</a></li>
+        </ul>
+
+        <div class="go-top">
+            Go to top&nbsp;&nbsp;&uarr;
+        </div>
+    </div>
+</footer>
+
+<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script src="/posh/js/script.js"></script>
 </body>
 </html>

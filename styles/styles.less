@@ -161,9 +161,7 @@ section .description {
 	z-index: 0;
 	overflow: hidden;
 	
-	.background {
-		background: url(/posh/img/header-bg.jpg) no-repeat center top;
-		background-size: cover;
+	.header-background {
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -172,6 +170,67 @@ section .description {
 		z-index: 1;
 		opacity: 0;
 		transition: opacity ease-in-out 0.4s;
+
+		.slick-list {
+			width: 100%;
+			height: 100%;
+		}
+
+		.slick-track,
+		.slick-slide > div {
+			height: 100%;
+		}
+
+		.slick-dots {
+			width: auto;
+			bottom: auto;
+			top: 50%;
+			transform: translateX(-50%);
+			right: 0;
+			z-index: 5;
+
+			li {
+				display: block;
+				width: 0.8rem;
+				height: 0.8rem;
+				margin: 1.5rem 5px;
+
+				button::before {
+					color: #fff;
+					opacity: 1;
+					content: '';
+					background: #fff;
+					width: 0.8rem;
+					height: 0.8rem;
+					line-height: 0.8rem;
+				}
+
+				&.slick-active button::before {
+					box-shadow: 0 0 0 3px @yellow;
+				}
+			}
+		}
+
+		.slide {
+			height: 100%;
+			background-size: cover;
+		}
+
+		.slide-1 {
+			background: url(/posh/img/header-bg/main.jpg) no-repeat center center;
+		}
+
+		.slide-2 {
+			background: url(/posh/img/header-bg/blonde.jpg) no-repeat center center;
+		}
+
+		.slide-3 {
+			background: url(/posh/img/header-bg/girl.jpg) no-repeat center center;
+		}
+
+		.slide-4 {
+			background: url(/posh/img/header-bg/bokeh.jpg) no-repeat center center;
+		}
 	}
 	
 	.pre-header {
@@ -316,7 +375,7 @@ section .description {
 	.promo {
 		text-align: center;
 		color: #fff;
-		margin: auto 0;
+		margin: auto 3rem auto 0;
 		z-index: 2;
 		
 		h1 {
