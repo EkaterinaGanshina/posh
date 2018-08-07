@@ -1,7 +1,7 @@
 # Posh Project
 Main page of style & beauty site.
 
-This is the demo project for my portfolio, you can see it in action at http://ganshina.com/posh/ 
+This is the demo project for my portfolio, you can see it in action at http://posh.ganshina.com/ 
 
 Author: Ekaterina Ganshina ekaterina@ganshina.com
 
