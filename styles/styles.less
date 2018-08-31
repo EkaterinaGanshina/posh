@@ -86,6 +86,10 @@
 
 /* Styles */
 
+* {
+  box-sizing: border-box;
+}
+
 html, body, p, ul {
   margin: 0;
   padding: 0;
@@ -103,10 +107,6 @@ body {
 ul {
   cursor: default;
   list-style: none;
-
-  li {
-
-  }
 }
 
 h1, h2, h3, h4 {
@@ -132,6 +132,10 @@ a, a:hover {
 
 p {
   line-height: 1.4;
+}
+
+address {
+  font-style: normal;
 }
 
 .container {
@@ -183,26 +187,32 @@ section .description {
 
     .slick-dots {
       width: auto;
-      bottom: auto;
-      top: 50%;
+      bottom: 1.8rem;
+      top: auto;
       transform: translateX(-50%);
-      right: 0;
+      left: 50%;
       z-index: 5;
 
       li {
-        display: block;
+        display: inline-block;
         width: 0.8rem;
         height: 0.8rem;
-        margin: 1.5rem 5px;
+        margin: 5px 1rem;
 
-        button::before {
-          color: #fff;
-          opacity: 1;
-          content: '';
-          background: #fff;
+        button {
           width: 0.8rem;
           height: 0.8rem;
-          line-height: 0.8rem;
+          padding: 0;
+
+          &::before {
+            color: #fff;
+            opacity: 1;
+            content: '';
+            background: #fff;
+            width: 0.8rem;
+            height: 0.8rem;
+            line-height: 0.8rem;
+          }
         }
 
         &.slick-active button::before {
@@ -378,8 +388,11 @@ section .description {
   .promo {
     text-align: center;
     color: #fff;
-    margin: auto 3rem auto 0;
-    z-index: 2;
+    margin: auto 0;
+    z-index: 1;
+    position: static;
+    width: 100%;
+    padding: 0 15px;
 
     h1 {
       font-family: @font-serif;
@@ -394,7 +407,7 @@ section .description {
     }
 
     .description {
-      margin: 0 0 2.5rem;
+      margin: 0.5rem 0 2.5rem;
       color: inherit;
     }
 
@@ -793,9 +806,15 @@ section .description {
         background-size: cover;
       }
 
-      &.address::before {
-        width: 54px;
-        background-position: 0 0;
+      &.address {
+        ::before {
+          width: 54px;
+          background-position: 0 0;
+        }
+
+        address {
+          font-family: @font-serif;
+        }
       }
 
       &.phone::before {
@@ -1498,7 +1517,22 @@ section .description {
       }
     }
 
+    .header-background .slick-dots {
+      width: auto;
+      bottom: auto;
+      top: 50%;
+      right: 0;
+      left: auto;
+
+      li {
+        display: block;
+        margin: 1.5rem 5px;
+      }
+    }
+
     .promo {
+      width: calc(100% - 30px);
+
       h1 {
         font-size: 4rem;
       }
@@ -1766,6 +1800,35 @@ section .description {
           left: 0;
         }
       }
+    }
+  }
+}
+
+@media (max-width: 1024px) and (orientation: portrait) {
+  .page-header {
+    height: 90vh;
+  }
+}
+
+@media (max-width: 1024px) and (orientation: landscape) {
+  .page-header {
+    height: 100vh;
+
+    .header-background .slick-dots {
+      width: auto;
+      bottom: auto;
+      top: 50%;
+      right: 0;
+      left: auto;
+
+      li {
+        display: block;
+        margin: 1.5rem 5px;
+      }
+    }
+
+    .promo {
+      width: calc(100% - 30px);
     }
   }
 }
